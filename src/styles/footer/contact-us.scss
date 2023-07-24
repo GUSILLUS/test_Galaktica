@@ -1,0 +1,29 @@
+@import "utils";
+
+.contact_us {
+  display: flex;
+  width: 198px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  &__text {
+    color: $c-h1;
+    @extend %h1;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    align-self: stretch;
+  }
+
+  &__email {
+    @extend %text;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: $c-text;
+    align-self: stretch;
+    text-transform: none;
+    text-decoration: none;
+  }
+}

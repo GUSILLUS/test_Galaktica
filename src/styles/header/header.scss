@@ -1,0 +1,30 @@
+@import "../navbar/navbar.scss";
+@import "./logo.scss";
+
+.header {
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 84px;
+    padding: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+  }
+
+  &__burger-button {
+    background-image: url("../images/burger_menu.svg");
+    background-color: transparent;
+    width: 24px;
+    height: 16px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+  }
+}

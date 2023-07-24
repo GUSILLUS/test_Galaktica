@@ -1,0 +1,12 @@
+@import "utils";
+@import ".//header/header.scss";
+@import "./weBuyTraffic/we_buy_traffic.scss";
+@import "blocks";
+@import "./footer/footer.scss";
+
+body {
+  background: $c-background;
+  background-image: url("../images/background-img.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

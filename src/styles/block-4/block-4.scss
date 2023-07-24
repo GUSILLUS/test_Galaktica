@@ -1,0 +1,84 @@
+@import "utils";
+@import "./options.scss";
+
+.block-4 {
+  &__container {
+    display: flex;
+    padding: 40px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__h2 {
+    color: $c-h1;
+    @extend %h1;
+    font-size: 24px;
+
+    & span {
+      position: relative;
+    }
+
+    & span::before {
+      @extend %borderBot;
+      width: 99px;
+      right: -2px;
+    }
+  }
+
+  &__propositions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__traffic_source {
+    display: flex;
+    width: 100%;
+    padding: 16px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 10px;
+    background: $c-purple;
+
+    &_title {
+      @extend %h1;
+      color: $c-white;
+      font-size: 18px;
+    }
+  }
+
+  &__geo-pay {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    &_container {
+      display: flex;
+      width: 162px;
+      height: 127px;
+      padding: 16px 24px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background: $c-yellow;
+    }
+
+    &_title {
+      @extend %h1;
+      color: $c-white;
+      font-size: 18px;
+    }
+  }
+
+  &__figure {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+}

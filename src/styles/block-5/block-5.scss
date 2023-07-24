@@ -1,0 +1,83 @@
+@import "utils";
+
+.block-5 {
+  &__container {
+    display: flex;
+    padding: 40px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__signUp {
+    display: flex;
+    width: 341px;
+    padding: 44px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 15px;
+    background: $c-purple;
+    z-index: -2;
+  }
+
+  &__text {
+    display: flex;
+    padding: 0 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  &__body {
+    width: 194px;
+    color: $c-white;
+    text-align: center;
+    @extend %text;
+    font-weight: 400;
+    text-transform: none;
+  }
+  
+  &__h1 {
+    @extend %h1;
+    color: $c-white;
+    font-size: 28px;
+    text-align: center;
+
+    & span {
+      position: relative;
+    }
+
+    & span::before {
+      @extend %borderBot;
+      width: 145px;
+      right: -6px;
+    }
+
+    & .s-2::before {
+      width: 154px;
+      top: 95%;
+      right: 1px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    width: 170px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: $c-yellow;
+    color: $c-white;
+    font-weight: 600;
+    border: none;
+    @extend %text;
+
+    &:hover {
+      background: $c-white;
+      color: $c-purple;
+      transition: all $transition-time ease;
+    }
+  }
+}

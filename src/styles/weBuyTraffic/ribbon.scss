@@ -1,0 +1,45 @@
+@import "utils";
+
+.ribbon {
+  position: absolute;
+  height: 43px;
+  background-image: url("../images/row.svg");
+  background-position: 0 0;
+  background-size: cover;
+  background-origin: content-box;
+  width: 110%;
+  animation: ribbon 20s linear infinite;
+  top: 30px;
+
+  &--purple {
+    background-color: $c-purple;
+    transform: rotate(-8deg);
+    left: -10px;
+  }
+
+  &--yellow {
+    background-color: $c-yellow;
+    animation: ribbon-rev 20s linear infinite;
+    transform: rotate(8deg);
+    z-index: -1;
+    right: -10px;
+  }
+}
+
+@keyframes ribbon {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 100% bottom;
+  }
+}
+
+@keyframes ribbon-rev {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 0 bottom;
+  }
+}

@@ -1,0 +1,12 @@
+@import "./ribbon.scss";
+
+.we-buy-traffic {
+  &__container {
+    padding: 13px 0;
+  }
+
+  &__ribbon {
+    position: relative;
+    height: 109px;
+  }
+}

@@ -1,0 +1,17 @@
+.options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+
+  &-item {
+    color: $c-white;
+    @extend %text;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+}

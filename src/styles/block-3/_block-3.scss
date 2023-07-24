@@ -1,0 +1,56 @@
+@import "utils";
+
+.block-3 {
+  &__container {
+    display: flex;
+    padding: 40px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__h2 {
+    color: $c-h1;
+    @extend %h1;
+    font-size: 24px;
+
+    & span {
+      position: relative;
+    }
+
+    & span::before {
+      @extend %borderBot;
+      width: 108px;
+      right: -2px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    &-top {
+      display: flex;
+      width: 343px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    &-title {
+      font-size: 18px;
+      @extend %h1;
+      align-self: stretch;
+    }
+
+    &_p {
+      @extend %text;
+      color: $c-text;
+      font-weight: 400;
+      text-align: left;
+      text-transform: none;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "vars";
+
+%h1 {
+  font-family: "Exo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+%borderBot {
+  position: absolute;
+  top: 97%;
+  transform: translateY(-100%);
+  z-index: -1;
+  content: "";
+  height: 10px;
+  border-radius: 21px;
+  background: $c-hover;
+}
+
+%text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  text-transform: capitalize;
+}

@@ -1,0 +1,48 @@
+@import "utils";
+
+.block-1 {
+  &__container {
+    padding: 12px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__textZone {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &_h1 {
+      @extend %h1;
+      color: $c-h1;
+      text-align: left;
+      font-size: 28px;
+
+      & span {
+        position: relative;
+      }
+
+      & span::before {
+        @extend %borderBot;
+        width: 186px;
+        right: 0;
+      }
+    }
+
+    &_p {
+      @extend %text;
+      font-weight: 400;
+      color: $c-text;
+      text-align: left;
+      text-transform: none;
+      font-size: 16px;
+    }
+  }
+}

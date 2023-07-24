@@ -1,0 +1,54 @@
+@import "utils";
+@import "./cards.scss";
+
+.block-2 {
+  &__container {
+    display: flex;
+    padding: 40px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__h2 {
+    color: $c-h1;
+    font-size: 24px;
+    @extend %h1;
+
+    & span {
+      position: relative;
+    }
+
+    & span::before {
+      @extend %borderBot;
+      width: 213px;
+      right: -3px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+    list-style: none;
+
+    &_item {
+      display: flex;
+      width: 100%;
+      padding: 28px 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $bg-partners;
+      border-radius: 10px;
+    }
+  }
+
+  &__figure {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+}
