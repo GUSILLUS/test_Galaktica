@@ -12,6 +12,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & img {
+      width: 285px;
+      height: 285px;
+    }
   }
 
   &__textZone {
@@ -32,7 +37,7 @@
       & span::before {
         @extend %borderBot;
         width: 186px;
-        right: 0;
+        // right: 0;
       }
     }
 
