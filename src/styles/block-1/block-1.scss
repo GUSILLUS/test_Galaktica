@@ -32,12 +32,13 @@
 
       & span {
         position: relative;
+        text-wrap: nowrap;
       }
 
       & span::before {
         @extend %borderBot;
         width: 186px;
-        // right: 0;
+        right: 0;
       }
     }
 

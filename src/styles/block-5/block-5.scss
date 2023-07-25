@@ -49,12 +49,14 @@
 
     & span {
       position: relative;
+      text-wrap: nowrap;
     }
 
     & span::before {
       @extend %borderBot;
       width: 145px;
       right: -6px;
+      white-space: nowrap;
     }
 
     & .s-2::before {

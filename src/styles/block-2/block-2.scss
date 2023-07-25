@@ -17,6 +17,8 @@
 
     & span {
       position: relative;
+      text-wrap: nowrap;
+
     }
 
     & span::before {
