@@ -6,6 +6,12 @@
   gap: 20px;
   list-style: none;
 
+  @include onDesktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
   &_item {
     display: flex;
     width: 100%;
@@ -15,5 +21,14 @@
     align-items: center;
     background: $bg-partners;
     border-radius: 10px;
+
+    &:first-child {
+      margin: 0 145px;
+    }
+
+    @include onDesktop {
+      width: 267px;
+      height: 130px;
+    }
   }
 }

@@ -1,9 +1,13 @@
 @import "./ribbon.scss";
 
 .we-buy-traffic {
-  &__container {
+  &__ribon-container {
     padding: 13px 0;
     overflow: hidden;
+
+    @include onDesktop {
+      overflow: visible;
+    }
   }
 
   &__ribbon {

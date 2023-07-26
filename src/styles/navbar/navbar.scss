@@ -14,6 +14,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+
+    @include onDesktop {
+      display: none;
+    }
   }
 
   &__bottomrow {
@@ -21,6 +25,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
   }
 
   &__list {
@@ -30,6 +38,15 @@
     width: 170px;
     gap: 12px;
     justify-content: center;
+
+    @include onDesktop {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 46px;
+      align-self: stretch;
+      width: 100%;
+    }
   }
 
   &:target {
@@ -51,6 +68,10 @@
     justify-content: center;
     align-items: center;
 
+    @include onDesktop {
+      width: 111px;
+    }
+
     &:hover {
       background: $c-hover;
       transition: color $transition-time ease;
@@ -65,6 +86,11 @@
     @extend %text;
     text-align: center;
     font-weight: 400;
+
+    @include onDesktop {
+      font-weight: 600;
+      padding: 0;
+    }
   }
 
   &__item &__link:hover,

@@ -15,6 +15,11 @@
     background-color: $c-purple;
     transform: rotate(-8deg);
     left: -10px;
+
+    @include onDesktop {
+      transform: rotate(-5deg);
+      left: -5%;
+    }
   }
 
   &--yellow {
@@ -23,6 +28,11 @@
     transform: rotate(8deg);
     z-index: -1;
     right: -10px;
+
+    @include onDesktop {
+      transform: rotate(5deg);
+      right: -5%;
+    }
   }
 }
 
@@ -31,13 +41,13 @@
     background-position: 0 bottom;
   }
   100% {
-    background-position: 100% bottom;
+    background-position: 300% bottom;
   }
 }
 
 @keyframes ribbon-rev {
   0% {
-    background-position: 100% bottom;
+    background-position: 300% bottom;
   }
   100% {
     background-position: 0 bottom;

@@ -2,6 +2,11 @@
 @import "./logo.scss";
 
 .header {
+  @include onDesktop {
+    display: flex;
+    justify-content: center;
+  }
+
   &__container {
     display: flex;
     width: 100%;
@@ -9,12 +14,11 @@
     padding: 0 16px;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &__menu {
-    background-color: red;
-    height: 100px;
-    width: 100px;
+    
+    @include onDesktop {
+      width: 1140px;
+      padding: 0;
+    }
   }
 
   &__burger-button {
@@ -26,6 +30,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     padding: 0;
+
+    @include onDesktop {
+      display: none;
+    }
   }
 
   &__navbar {
@@ -42,5 +50,15 @@
     align-items: center;
     transform: translateY(-100%);
     transition: transform $transition-time ease;
+
+    @include onDesktop {
+      flex-direction: row;
+      position: relative;
+      align-items: center;
+      gap: 64px;
+      background: none;
+      transform: translateY(0);
+      justify-content: flex-end;
+    }
   }
 }

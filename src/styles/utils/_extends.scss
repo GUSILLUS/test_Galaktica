@@ -11,12 +11,18 @@
 %borderBot {
   position: absolute;
   top: 97%;
+  width: 101%;
   transform: translateY(-100%);
   z-index: -1;
   content: "";
   height: 10px;
   border-radius: 21px;
   background: $c-hover;
+
+  @include onDesktop {
+    top: 94%;
+    height: 12px;
+  }
 }
 
 %text {
