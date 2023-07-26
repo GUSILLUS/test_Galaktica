@@ -11,12 +11,8 @@ html {
 body {
   background: $c-background;
   background-image: url("../images/background-img.png");
-  background-size: 100%;
-  background-repeat: repeat-x;
-
-  @include onDesktop {
-    background-image: none;
-  }
+  background-size: 100% 1004px;;
+  background-repeat: no-repeat;
 }
 
 [class*="__container"] {

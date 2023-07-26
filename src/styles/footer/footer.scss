@@ -2,13 +2,20 @@
 @import "./contact-us.scss";
 
 .footer {
+  background-color: $bg-footer;
+  width: 100%;
+
   &__container {
     display: flex;
-    width: 100%;
     padding: 64px 150px 32px;
     flex-direction: column;
     align-items: center;
     gap: 28px;
-    background-color: $bg-footer;
+    
+
+    @include onDesktop {
+      padding: 64px 0;
+      gap: 28px;
+    }
   }
 }

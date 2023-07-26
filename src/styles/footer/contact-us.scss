@@ -7,6 +7,10 @@
   align-items: center;
   gap: 8px;
 
+  @include onDesktop {
+    gap: 12px;
+  }
+
   &__text {
     color: $c-h1;
     @extend %h1;
@@ -14,6 +18,10 @@
     font-weight: 700;
     text-align: center;
     align-self: stretch;
+
+    @include onDesktop {
+      font-size: 16px;
+    }
   }
 
   &__email {
@@ -25,5 +33,9 @@
     align-self: stretch;
     text-transform: none;
     text-decoration: none;
+
+    @include onDesktop {
+      font-size: 16px;
+    }
   }
 }

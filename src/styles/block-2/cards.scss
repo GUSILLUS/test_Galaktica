@@ -22,13 +22,13 @@
     background: $bg-partners;
     border-radius: 10px;
 
-    &:first-child {
-      margin: 0 145px;
-    }
-
     @include onDesktop {
       width: 267px;
       height: 130px;
+
+      &:first-child {
+        margin: 0 145px;
+      }
     }
   }
 }

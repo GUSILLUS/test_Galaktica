@@ -3,11 +3,7 @@
 .we-buy-traffic {
   &__ribon-container {
     padding: 13px 0;
-    overflow: hidden;
-
-    @include onDesktop {
-      overflow: visible;
-    }
+    overflow: visible;
   }
 
   &__ribbon {

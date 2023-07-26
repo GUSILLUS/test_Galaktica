@@ -3,13 +3,19 @@
 .ribbon {
   position: absolute;
   height: 43px;
-  background-image: url("../images/row.png");
+  background-image: url("../images/row-2.png");
   background-position: 0 0;
-  background-size: cover;
+  // background-size: cover;
+  background-repeat: repeat-x;
   background-origin: content-box;
-  width: 110%;
-  animation: ribbon 20s linear infinite;
-  top: 30px;
+  padding: 7px 0;
+  width: 250%;
+  animation: ribbon 15s linear infinite;
+  top: -20px;
+
+  @include onDesktop {
+    animation: ribbon 20s linear infinite;
+  }
 
   &--purple {
     background-color: $c-purple;
@@ -24,7 +30,7 @@
 
   &--yellow {
     background-color: $c-yellow;
-    animation: ribbon-rev 20s linear infinite;
+    animation: ribbon-rev 15s linear infinite;
     transform: rotate(8deg);
     z-index: -1;
     right: -10px;
@@ -32,6 +38,7 @@
     @include onDesktop {
       transform: rotate(5deg);
       right: -5%;
+      animation: ribbon-rev 20s linear infinite;
     }
   }
 }
@@ -41,13 +48,13 @@
     background-position: 0 bottom;
   }
   100% {
-    background-position: 300% bottom;
+    background-position: 100% bottom;
   }
 }
 
 @keyframes ribbon-rev {
   0% {
-    background-position: 300% bottom;
+    background-position: 100% bottom;
   }
   100% {
     background-position: 0 bottom;

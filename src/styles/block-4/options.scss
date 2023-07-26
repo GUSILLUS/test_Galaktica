@@ -7,11 +7,19 @@
   gap: 16px;
   align-self: stretch;
 
+  @include onDesktop {
+    gap: 24px;
+  }
+
   &-item {
     color: $c-white;
     @extend %text;
     font-size: 14px;
     font-weight: 700;
     line-height: 140%;
+
+    @include onDesktop {
+      font-size: 18px;
+    }
   }
 }
