@@ -19,12 +19,15 @@
   }
 
   &__services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  
     @include onDesktop {
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      gap: 40px;
       align-self: stretch;
       width: 100%;
     }

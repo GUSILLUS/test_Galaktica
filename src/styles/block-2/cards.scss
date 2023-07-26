@@ -21,6 +21,7 @@
     align-items: center;
     background: $bg-partners;
     border-radius: 10px;
+    cursor: pointer;
 
     @include onDesktop {
       width: 267px;
